@@ -1,0 +1,170 @@
+*{
+     margin: 0;
+    padding: 0;
+}
+body{
+/*    width: 100%;*/
+    background:black;
+}
+.box{
+    width: 300px;
+    height: 300px;
+     margin: 200px auto;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform: rotate3d(0,0,0,25deg)
+}
+.box ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 10px auto;
+    background: #ffffff;
+    display: flex;
+    border-radius: 10px;
+}
+/*111111111111111111111111111111*/
+.box ul:nth-of-type(1){
+/*    display: flex;*/
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateZ(150px);
+    -moz-transform: translateZ(150px);
+    -o-transform: translateZ(150px);
+    -ms-transform: translateZ(150px);
+    transform: translateZ(150px);
+}
+.box ul:nth-of-type(1) li{
+    background:red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+/*22222222222222222222*/
+.box ul:nth-of-type(2){
+    justify-content: space-between;
+    align-items: flex-start;
+    -webkit-transform: translateX(-150px) rotateY(-90deg);
+    -moz-transform: translateX(-150px) rotateY(-90deg);
+    -o-transform: translateX(-150px) rotateY(-90deg);
+    -ms-transform: translateX(-150px) rotateY(-90deg);
+    transform: translateX(-150px) rotateY(-90deg);
+}
+.box ul:nth-of-type(2) li{
+    background:red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.box ul:nth-of-type(2) li:first-child{
+    align-self: flex-end;
+}
+/*333333333333333333*/
+.box ul:nth-of-type(3){
+    justify-content: space-between;
+    align-items: flex-start;
+    -webkit-transform: translateY(-150px) rotateX(90deg);
+    -moz-transform: translateY(-150px) rotateX(90deg);
+    -o-transform: translateY(-150px) rotateX(90deg);
+    -ms-transform: translateY(-150px) rotateX(90deg);
+    transform: translateY(-150px) rotateX(90deg);
+}
+.box ul:nth-of-type(3) li{
+    background:red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.box ul:nth-of-type(3) li:first-child{
+    align-self: flex-end;
+}
+.box ul:nth-of-type(3) li:nth-child(2){
+    align-self:center;
+}
+/*4444444444444444444*/
+.box ul:nth-of-type(4){
+    flex-wrap: wrap;
+    justify-content: space-between;
+/*    align-items: flex-start;*/
+    align-content: space-between;
+    -webkit-transform: translateY(150px) rotateX(-90deg);
+    -moz-transform: translateY(150px) rotateX(-90deg);
+    -o-transform: translateY(150px) rotateX(-90deg);
+    -ms-transform: translateY(150px) rotateX(-90deg);
+    transform: translateY(150px) rotateX(-90deg);
+}
+.box ul:nth-of-type(4) li{
+    background:red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+/*5555555555555555555555555555*/
+.box ul:nth-of-type(5){
+    flex-wrap: wrap;
+    justify-content: space-between;
+/*    align-items: flex-start;*/
+    align-content: space-between;
+    -webkit-transform: translateX(150px) rotateY(90deg);
+    -moz-transform: translateX(150px) rotateY(90deg);
+    -o-transform: translateX(150px) rotateY(90deg);
+    -ms-transform: translateX(150px) rotateY(90deg);
+    transform: translateX(150px) rotateY(90deg);
+}
+.box ul:nth-of-type(5) li{
+    background:red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.box ul:nth-of-type(5) li:nth-child(3){
+    width: 100%;
+    background: transparent;
+    border-radius: 0; 
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+ul:nth-of-type(5) span{
+    background:red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/*6666666666666666666*/
+.box ul:nth-of-type(6){
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+/*    align-items: flex-start;*/
+    align-content: space-around;
+    -webkit-transform: translateZ(-150px) rotateX(180deg);
+    -moz-transform: translateZ(-150px) rotateX(180deg);
+    -o-transform: translateZ(-150px) rotateX(180deg);
+    -ms-transform: translateZ(-150px) rotateX(180deg);
+    transform: translateZ(-150px) rotateX(180deg);
+}
+.box ul:nth-of-type(6) li{
+    background:red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
